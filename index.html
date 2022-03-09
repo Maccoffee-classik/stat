@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="fonts/font.css" rel="stylesheet">
+	<title>Calmar</title>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg  fixed-top bg-purple">
+		<a class="nav-link" href="#">
+			<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M12.6663 26.6669V18.3335H19.333V26.6669C19.333 27.5835 20.083 28.3335 20.9997 28.3335H25.9997C26.9163 28.3335 27.6663 27.5835 27.6663 26.6669V15.0002H30.4997C31.2663 15.0002 31.633 14.0502 31.0497 13.5502L17.1163 1.0002C16.483 0.433529 15.5163 0.433529 14.883 1.0002L0.949675 13.5502C0.383009 14.0502 0.733008 15.0002 1.49968 15.0002H4.33301V26.6669C4.33301 27.5835 5.08301 28.3335 5.99968 28.3335H10.9997C11.9163 28.3335 12.6663 27.5835 12.6663 26.6669Z"
+					fill="#FCFCFC" />
+			</svg>
+
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+			aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+				<li class="nav-item active">
+					<a class="navbar-brand" href="#">
+						<img class="logo" src="img/logo.png" alt="logo">
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Звонки</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Виджеты</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Статистика</a>
+				</li>
+
+
+
+			</ul>
+
+		</div>
+
+	</nav>
+
+	<main class="content-wrapper">
+		<div class="container">
+			<div class="navbar-right">
+
+				<div class="login">
+					<div class="login-mail">Вы вошли как groupsh@yandex.ru </div>
+					<button class="loguot-button">Выйти</button>
+				</div>
+				<div class="payment">
+					<div class="payment-info">Баланс
+						<span class="balance-time">13 мин.</span>
+						до
+						<span class="balance-date">12.11.21</span>
+					</div>
+					<div class="payment-button payment-button__top">Оплатить</div>
+				</div>
+			</div>
+
+
+
+			<div class="stat">
+				<div class="stat-block__title">Статистика</div>
+				<div class="stat-block__buttons row slim mt-3">
+					<div class="col-lg-3">
+						<button class="stat-block__btn-calendar">
+							<svg class="stat-block__btn-ico" width="18" height="20" viewBox="0 0 18 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V8H16V18ZM6 12H4V10H6V12ZM10 12H8V10H10V12ZM14 12H12V10H14V12ZM6 16H4V14H6V16ZM10 16H8V14H10V16ZM14 16H12V14H14V16Z"
+									fill="#9C9C9C" />
+							</svg>
+
+							23 декабря, 2021
+						</button>
+					</div>
+					<div class="col-lg-2 col-xl-1">
+						<div class="stat-block__date-group">
+							<button class="stat-block__btn-day">По дням</button>
+
+						</div>
+					</div>
+					<div class="col-4 col-lg-3 col-xl-3">
+						<div class="button__vidget-group d-flex">
+
+							<div class="stat-block__vidget-select">
+								<select class="select" name="language">
+									<option disabled>Все виджеты</option>
+									<option value="1">Все виджеты</option>
+									<option value="2">Виджет 1</option>
+									<option value="3">Виджет 2</option>
+									<option value="4">Виджет 3</option>
+								</select>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+			<div class="stat-block__subtitle row slim text-center mt-4">
+				<div class="col-12">Сводная статистика по дням
+					<p>по всем виджетам</p>
+
+				</div>
+
+			</div>
+			<div class="stat-block__extension  row slim  mt-2">
+				<div class="col-3">
+					<p><svg class="stat-block__ico" width="42" height="11" viewBox="0 0 42 11" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<circle cx="20.5" cy="5.5" r="5.5" fill="#D75C78" />
+							<rect y="4" width="42" height="4" fill="#D75C78" />
+						</svg>
+						Показы виджета</p>
+					<p><svg class="stat-block__ico" width="42" height="11" viewBox="0 0 42 11" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<circle cx="20.5" cy="5.5" r="5.5" fill="#81D880" />
+							<rect y="4" width="42" height="4" fill="#81D880" />
+						</svg>
+						Количество звонков</p>
+
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+	</main>
+
+	<script src="js/main.js" defer=""> </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="js/bootstrap.min.js" defer=""> </script>
+	<script>
+		$(document).ready(function () {
+			$('.nav-link-collapse').on('click', function () {
+				$('.nav-link-collapse').not(this).removeClass('nav-link-show');
+				$(this).toggleClass('nav-link-show');
+			});
+		});
+	</script>
+</body>
+
+</html>

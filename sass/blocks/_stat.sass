@@ -1,0 +1,444 @@
+html
+	position: relative
+	min-height: 100%
+
+body
+	padding-top: 2.5rem
+	margin-bottom: 4.5rem
+	@media (max-width: 992px)
+		padding-top: 4.5rem
+
+.row.slim
+	margin-left: 0
+	margin-right: 0
+
+.row.slim > [class^="col-"], .slim > [class*=" col-"]
+	padding-left: 0 !important
+	padding-right: 0 !important
+
+.nav-link:hover
+	transition: all 0.4s
+.navbar
+	border-radius: 5px
+	@media (max-width: 992px)
+		width: 89.944vw
+		margin-left: 5vw
+		margin-right: 5vw
+.bg-purple
+	background-color: $bg-color-purple!important
+.fixed-top
+	top: 0
+.navbar-brand
+	margin-right: 0
+.navbar-toggler-icon
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+
+.logo
+	padding-top: 4.6vh
+	padding-bottom: 6.4vh
+	display: flex
+	margin: 0 auto
+
+.sidenav
+
+	width: 100%
+	background: $bg-color-purple
+	&-wrapper
+		display: flex
+.sidenav
+	text-decoration: none
+	text-align: center
+	list-style-type: none
+
+	li
+		border-top: 3px solid #422D53
+		padding-top: 0.6vh
+		padding-bottom: 0.6vh
+		&:first-child
+			border: none
+			&:hover
+				background: none
+				margin-right: 0
+
+		&:last-child
+			border-bottom: 3px solid #422D53
+
+		&:hover
+			background: $bg-color-pink
+			border-right: 4px
+			border-radius: 0 5px 5px 0
+			margin-right: -4px
+			@media (max-width: 992px)
+				border-radius: 5px
+
+		a
+			color: $text-w
+			font-size: 1.30vw
+			font-weight: 700
+			@media (max-width: 992px)
+				font-size: 4.30vw
+			&:hover
+				color: $text-w-hov
+				text-decoration: none
+
+.default-on
+	background-color: #FFE1E5
+	border-top: 6px solid #FFB5B5
+	margin-bottom: 0.870vh
+	@media (max-width: 992px)
+		width: 99vw
+		margin-left: -5vw
+		.col-12
+			padding: 0
+		.row
+			margin: 0
+	&__wrapper
+		align-items: center
+	&__text
+		font-size: 2.333vh
+		font-weight: 500
+		text-align: 	right
+		margin-right: 6.458vw
+		@media (max-width: 992px)
+			padding-top: 2.315vh
+			text-align: 	center
+			margin-right: 0
+	&__button-ico
+		margin-right: 0.521vw
+	&__button
+		align-items: 	center
+		padding: 1.481vh 3.073vw
+		color: #ffffff
+		font-size: 2.333vh
+		font-weight: 400
+		background-color: $bg-color-red
+		filter: drop-shadow(0px 17px 32px rgba(0, 0, 0, 0.25))
+		border: none
+		border-radius: 5px
+		margin: 3.630vh auto
+		@media (max-width: 992px)
+			display: 	flex
+@media (min-width: 992px)
+	.sidenav
+		position: absolute
+		top: 0
+		left: 0
+		width: 11.67vw
+		background: $bg-color-purple
+		height: calc(100vh)
+		margin-top: 4.5rem
+
+		box-sizing: border-box
+		border-top: 1px solid rgba(0, 0, 0, 0.3)
+	.fixed-top
+		top: -4.5rem
+
+	.navbar-expand-lg .sidenav
+		flex-direction: column
+
+	.content-wrapper
+		margin-left: 11.67vw
+
+@media (max-width: 992px)
+	.logo
+		padding-top: 0
+		padding-bottom: 0
+
+.navbar-right
+	display: flex
+	align-items: flex-end
+	flex-direction: column
+	@media (max-width: 992px)
+		align-items: stretch
+.login
+	margin-bottom: 5.5vh
+	display: flex
+	align-items: center
+	@media (max-width: 992px)
+		display: none
+	&-mail
+		color: $text-b
+		font-size: 1vw
+		margin-right: 1vw
+
+.loguot-button
+	background: transparent
+	color: $text-pink
+	border: 2px solid $text-pink
+	padding: 0.3vh 0.938vw
+
+.payment
+	margin-bottom: 2.4vh
+	border-radius: 5px
+	align-items: center
+	display: flex
+	color: $text-w
+	background: $bg-color-purple
+	&-info
+		padding: 2vh 2.396vw
+		font-size: 	1.7vh
+		@media (max-width: 992px)
+			text-align: 	center
+			width: 100%
+
+	&-button
+		&__top
+			padding: 2vh 3.7vh
+			border-left: 0.2vw solid #422D53
+
+		&__top:hover
+			background: $bg-color-pink
+.balance-time
+	background: $bg-color-pink
+	border-radius: 5px
+	padding: 0.2vh 0.417vw
+	margin: 0 0.781vw
+.stat
+	@media (max-width: 992px)
+		display: none
+		margin-bottom: 5.556vh
+		.col-lg-3
+			padding: 0
+		.col-lg-4
+			padding: 0
+		.row
+			margin: 0
+
+.stat-block
+	&__title
+		font-size: 3.333vh
+		font-weight: 700
+	&__btn-ico
+		padding-bottom: 4px
+		width: 1.250vw
+		height: 2.222vh
+	&__btn-calendar
+		font-size: 1.667vh
+		padding-left: 15px
+		text-align: left
+		width: 16.229vw
+		padding-top: 1.0vh
+		padding-bottom: 1.0vh
+		border: 2px solid #7C7C7C
+		border-radius: 5px
+		background-color: transparent
+		cursor: 	pointer
+		@media (max-width: 992px)
+			width: 100%
+			margin-bottom: 1.777vh
+	&__date-group
+		background: $bg-color-purple
+		display: flex
+		max-width: 132px
+		justify-content: space-between
+		border-radius: 5px
+		overflow: hidden
+		@media (max-width: 992px)
+			margin-bottom: 1.777vh
+
+	&__btn-day
+		font-size: 1.667vh
+		font-weight: 700
+		border: none
+		padding: 1.204vh 0.354vw
+		width: 100%
+		color: #ffffff
+		background: $bg-color-purple
+		cursor: 	pointer
+		&:hover
+			background: $bg-color-pink
+	&__btn-yesterday
+		border-left: 0.208vw solid #422D53
+		border-right: 0.208vw solid #422D53
+	&__subtitle
+		font-size: 24px
+		font-weight: 700
+
+		p
+			font-size: 18px
+			font-weight: 700
+
+	&__extension
+		@media (max-width: 992px)
+			display: none
+		p
+			font-size: 1.667vh
+			font-weight: 700
+			margin-bottom: 0
+			margin-left: 3.438vw
+	&__ico
+		margin-right: 12px
+	&__vidget-select
+		width: 100%
+		border: none
+		padding-left: 50px
+.table thead th
+	border-top: none
+.table td, .table th
+	font-size: 1.667vh
+	font-weight: 700
+
+	white-space: nowrap
+	padding-left: 4.271vw
+	padding-right: 4.271vw
+	@media (max-width: 992px)
+		padding-left: 14.615vw
+		padding-right: 14.615vw
+table.table tbody tr td
+	border-left: 2px solid #D6D6D6
+	border-right: 2px solid #D6D6D6
+	background: #EEEEEE
+	height: 41.204vh
+.table td, .table th
+	&:first-child
+		padding-left: 7px
+		padding-right: 7px
+
+.select
+	display: block
+
+	width: 100%
+	position: relative
+
+.new-select
+	font-size: 1.667vh
+	font-weight: 700
+	text-align: left
+	position: relative
+	border: 1px solid #ced4da
+	padding: 1.204vh 0.948vw 1.204vh 1.354vw
+	cursor: pointer
+	user-select: none
+	background: $bg-color-purple
+	border-radius: 5px
+	color: $text-w
+
+.new-select__list
+	position: absolute
+	top: 4.907vh
+	left: 0
+	cursor: pointer
+	width: 100%
+	z-index: 2
+	background: #C4C4C4
+	user-select: none
+	color: #ffffff
+
+.new-select__list.on
+	display: block
+
+.new-select__item
+	span
+		border-top: 1px solid #9E9E9E
+		display: block
+		padding: 10px 15px
+		font-size: 1.667vh
+
+.new-select__item
+	span
+		&:hover
+			background: #9E9E9E
+
+.new-select
+	&:after
+		content: ''
+		display: block
+		width: 16px
+		height: 16px
+		position: absolute
+		right: 14px
+		top: 1.296vh
+		background: url('../img/arrow.png') right center no-repeat
+		background-size: 1.481vh
+		opacity: 0.6
+		-webkit-transition: all .27s ease-in-out
+		-o-transition: all .27s ease-in-out
+		transition: all .27s ease-in-out
+		-webkit-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
+		-o-transform: rotate(0deg)
+		transform: rotate(0deg)
+
+.new-select.on
+	&:after
+		-webkit-transform: rotate(180deg)
+		-ms-transform: rotate(180deg)
+		-o-transform: rotate(180deg)
+		transform: rotate(180deg)
+
+.package-choice
+	margin-bottom: 12.111vh
+	&__title
+		padding-top: 1.481vh
+		font-size: 2.222vh
+		font-weight: 700
+
+.info-package__text
+	position: relative
+	font-size: 1.667vh
+	font-weight: 500
+	margin-bottom: 7.222vh
+	&::after
+		width: calc(100% + 2.604vw)
+		content: ""
+		height: 0.3vh
+		background: #D6D6D6
+		position: absolute
+		bottom: -5.093vh
+		left: -1.302vw
+
+.payoff-info
+	margin-bottom: 5.556vh
+	font-size: 2.222vh
+	font-weight: 700
+	&__title
+
+	&__text
+		text-align: left
+
+.payoff
+	&-wrapper
+		display: flex
+		border: 3px solid $text-pink
+		border-radius: 5px
+		justify-content: space-between
+		align-items: center
+	&-sum
+		font-size: 3.333vh
+		font-weight: 700
+		padding: 0 1.563vw
+
+.payment-button__bottom
+	padding: 1.852vh 4.0vw
+	background: $bg-color-pink
+	border-radius: 0
+	&:hover
+		color: $text-w-hov
+
+.sidebar
+
+	transition: 0.5s
+
+.sidebar_active
+	display: flex !important
+	width: 100vw
+	align-items: center
+	justify-content: center
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 99
+	height: 70vh
+	transform: translateX(0%)
+.sidebar-menu
+
+.menu-btn
+	position: absolute
+	right: 30px
+	top: 0.52vh
+	z-index: 100
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+	display: inline-block
+	width: 1.5em
+	height: 1.5em
+	vertical-align: middle
